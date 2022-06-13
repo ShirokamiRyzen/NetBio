@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>home</title>
+<meta name="author" content="Ryz">
+<meta name="categories" content="web bio">
+<meta name="generator" content="WYSIWYG Web Builder 17 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/curves.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#services']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#services').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("#services").owlCarousel({autoplayTimeout:0, margin: 0, autoplay: false, nav: false, loop: true, dots: true, items: 3, slideBy: 3});
+   $("a[href*='#portfolioLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolioLayoutGrid').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolioLayoutGrid()
+   {
+      var $obj = $("#wb_portfolioLayoutGrid");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolioLayoutGrid();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolioLayoutGrid();
+   });
+   $("a[href*='#questions']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_questions').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#footer']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_footer').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#portfolio']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_portfolio').offset().top-68 }, 600, 'easeOutCirc');
+   });
+   function onScrollportfolio()
+   {
+      var $obj = $("#wb_portfolio");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollportfolio();
+   $(window).scroll(function(event)
+   {
+      onScrollportfolio();
+   });
+   $("a[data-rel='portfolioGallery']").attr('rel', 'portfolioGallery');
+   $("#portfolioGallery").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+});
+</script>
+</head>
+<body>
+<div id="container">
+<a href="null" target="_blank"> <alt="Web Builder" style="position:absolute;left:441px;top:1850px;margin: 0;border-width:0;z-index:250" width="16" height="16"></a>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:'Bookman Old Style';font-size:27px;"><strong>./Ryzen_Vermillion</strong></span>
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home-divider-top">
+<svg version="1.1" viewBox="0 0 240 24" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.33" d="M0,13.229V23.87h240V13.27C212.247,6.884,170.508,0,119.81,0 C69.18,0,27.642,6.884,0,13.229z" />
+<path class="divider-fill" style="opacity:0.33" d="M0,18.904V24h240v-5.036c-21.641-6.315-64.639-16.257-120.171-16.257 C64.351,2.707,21.572,12.589,0,18.904z" />
+<path class="divider-fill" d="M119.829,5.115C47.852,5.115,0,24,0,24h239.961C239.961,24,191.816,5.115,119.829,5.115z" />
+</svg>
+</div>
+<div id="home-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z">
+</path>
+</svg></div>
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:15px;line-height:16.5px;"><span style="font-size:32px;line-height:36px;font-weight:bold;">Welcome to my site</span></p>
+<p style="font-size:16px;line-height:18px;">Gada yang penting disini ancrit, bikin karena gabut aja wkwkwk</p>
+</div>
+<a id="homeButton" href="#services" style="display:inline-block;width:148px;height:38px;z-index:2;">Read More</a>
+</div>
+</div>
+</div>
+<div id="wb_services">
+<div id="services" class="owl-carousel owl-theme">
+<div id="wb_servicesCard1" style="display:flex;text-align:center;z-index:3;" class="card">
+   <div id="servicesCard1-card-body">
+      <div id="servicesCard1-card-item0"><i class="fa fa-windows"></i></div>
+      <div id="servicesCard1-card-item1">Tech Enthusiast</div>
+      <div id="servicesCard1-card-item2">Selalu nimbrung di forum IT ntah FB maupun Reddit dll. Roasting MIUI adalah kewajiban, user linux sok elit wajib digoreng, apalagi sales FLOSS.</div>
+      <div id="servicesCard1-card-item3"><a href="https://www.facebook.com/Nao.Tomori.UwU">Read More</a></div>
+   </div>
+</div>
+<div id="wb_servicesCard2" style="display:flex;text-align:center;z-index:4;" class="card">
+   <div id="servicesCard2-card-body">
+      <div id="servicesCard2-card-item0"><i class="fa fa-mobile"></i></div>
+      <div id="servicesCard2-card-item1">Mobile OS choices</div>
+      <div id="servicesCard2-card-item2">User AOSP garis keras, ga AOSP ga gemink. RealmeUI best OEM Rom on earth, MIUI mending turu (hp lu MIUI mending cusrom kids).</div>
+      <div id="servicesCard2-card-item3"><a href="https://source.android.com/">Read More</a></div>
+   </div>
+</div>
+<div id="wb_servicesCard3" style="display:flex;text-align:center;z-index:5;" class="card">
+   <div id="servicesCard3-card-body">
+      <div id="servicesCard3-card-item0"><i class="fa fa-thumbs-down"></i></div>
+      <div id="servicesCard3-card-item1">Anti Piracy</div>
+      <div id="servicesCard3-card-item2">Kalo ga jago bertani mending pake software open-source atau gratis kids, nanti kena rasomware nangis, bawa nama temen terus di post ke grup.</div>
+      <div id="servicesCard3-card-item3"><a href="https://www.facebook.com/photo/?fbid=174201771710046&set=gm.5067582530006695">Read More</a></div>
+   </div>
+</div>
+</div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:20;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:6;">
+<a href="./index.html#home"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<div id="wb_portfolioLayoutGrid">
+<div id="portfolioLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_portfolioGallery" style="display:inline-block;width:100%;z-index:7;">
+<div id="portfolioGallery">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/d53a069ff7b092e747e492f712e05d65.jpg" data-rel=""><img alt="" src="images/tn_d53a069ff7b092e747e492f712e05d65.png" class="image" width="215" height="215"></a>
+<div class="caption"></div>
+      </div>
+      <div class="thumbnail">
+         <a href="images/109deb64eb8146f54683c57002f527c0.0.jpg" data-rel=""><img alt="" src="images/tn_109deb64eb8146f54683c57002f527c0.0.png" class="image" width="215" height="215"></a>
+<div class="caption"></div>
+      </div>
+      <div class="thumbnail">
+         <a href="images/952f64758997bee354f2a8f29f8e9df2.jpg" data-rel=""><img alt="" src="images/tn_952f64758997bee354f2a8f29f8e9df2.png" class="image" width="215" height="215"></a>
+<div class="caption"></div>
+      </div>
+      <div class="thumbnail">
+         <a href="images/a1f699085dec07370abd7ca37e8eaa5a.jpg" data-rel=""><img alt="" src="images/tn_a1f699085dec07370abd7ca37e8eaa5a.png" class="image" width="215" height="215"></a>
+<div class="caption"></div>
+      </div>
+      <div class="clearfix visible-col4"></div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_questions">
+<div id="questions-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" preserveAspectRatio="none">
+<path class="divider-fill" style="opacity:0.3" d="M 505.29,47.51947 C 346.07,47.51947 235.61,230.3 0,230.3 V 0.3 h 508 z" />
+<path class="divider-fill" style="opacity:0.4" d="M 485.29,47.44 C 326.07,47.44 235.61,214.36 0,214.36 V 0.2 h 485.29 z" />
+<path class="divider-fill" style="opacity:0.5" d="m 485.29,48.46999 q -9.42,-0.31 -20,-0.32 c -159.22,0 -229.68,151 -465.29,151 v -198.24 h 485.29 z" />
+<path class="divider-fill" d="M 0,182 V -0.27 H 1000 V 24.4 C 787.4,24.4 781,99.85 702.92,99.85 645,99.85 632.92,46.97 445.29,46.97 286.07,46.97 235.61,182 0,182 Z" />
+</svg></div>
+<div id="questions">
+<div class="col-1">
+<div id="wb_questionsHeading1" style="display:inline-block;width:100%;z-index:8;">
+<h2 id="questionsHeading1">Any Question?</h2>
+</div>
+<div id="wb_questionsHeading2" style="display:inline-block;width:100%;z-index:9;">
+<h1 id="questionsHeading2">GET IN TOUCH WITH ME</h1>
+</div>
+<a id="questionsButton" href="https://ryz.netlify.app/contact.html" style="display:inline-block;width:161px;height:37px;z-index:10;">CONTACT US</a>
+</div>
+</div>
+</div>
+<div id="wb_footer" style="z-index: 10000 !important;">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<label for="" id="footerLabel1" style="display:block;width:100%;line-height:19px;z-index:11;">NEWSLETTER</label>
+<input type="text" id="footerEmail" style="display:block;width: 100%;height:38px;z-index:12;" name="email" value="" spellcheck="false" placeholder="Enter Your Email">
+<input type="submit" id="footerButton" name="" value="Subscribe" style="display:inline-block;width:97px;height:34px;z-index:13;">
+</div>
+<div class="col-2">
+</div>
+<div class="col-3">
+<div id="wb_footerLabel2" style="display:inline-block;width:100%;z-index:14;">
+<h3 id="footerLabel2">CONTACT</h3>
+</div>
+<div id="wb_footerText">
+<p>Facebook</p>
+<p>Instagram</p>
+<p>Youtube</p>
+</div>
+<div id="wb_footerIcon1" style="display:inline-block;width:18px;height:18px;text-align:center;z-index:16;">
+<a href="https://www.facebook.com/Nao.Tomori.UwU"><div id="footerIcon1"><i class="fa fa-facebook"></i></div></a>
+</div>
+<div id="wb_footerIcon2" style="display:inline-block;width:18px;height:18px;text-align:center;z-index:17;">
+<a href="https://www.instagram.com/ryzen_vermillion/"><div id="footerIcon2"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_footerIcon3" style="display:inline-block;width:18px;height:18px;text-align:center;z-index:18;">
+<a href="https://www.youtube.com/channel/UC5z1Xp6vQGU038B1RbMC3Gg"><div id="footerIcon3"><i class="fa fa-youtube-play"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_portfolio">
+<div id="portfolio-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z">
+</path>
+</svg></div>
+<div id="portfolio">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
